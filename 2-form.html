@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advanced JS. HW-1.</title>
-    <script type="module" crossorigin src="/goit-advancedjs-hw-01/assets/styles-FCZx8a59.js"></script>
+    <title>Task-2. Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..600&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/goit-advancedjs-hw-01/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/styles-FCZx8a59.js">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-CUhm_73T.css">
   </head>
   <body>
@@ -22,7 +26,7 @@
           <a class="nav-link {=$highlight-act}" href="./1-gallery.html">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./2-form.html">Form</a>
+          <a class="nav-link active" href="./2-form.html">Form</a>
         </li>
       </ul>
     </nav>
@@ -31,39 +35,21 @@
 
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <h1 class="main-title">
-      <span class="main-title-gradient">Advanced JS. HW-1.</span>
-      JSON format and web storage. JavaScript Modules.
-    </h1>
-  </div>
-</section>
+      <div class="container">
+        <a class="back-link" href="./index.html">Go back</a>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="../1-gallery.html"
-        >
-          Task-1. Gallery
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="../2-form.html"
-        >
-          Task-2. Form
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
+        <form class="feedback-form" autocomplete="off">
+          <label class="form-lable">
+            Email
+            <input class="form-input" type="email" name="email" autofocus />
+          </label>
+          <label class="form-lable">
+            Message
+            <textarea class="form-input form-textarea" name="message" rows="8"></textarea>
+          </label>
+          <button class="form-button" type="submit">Submit</button>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
@@ -89,7 +75,6 @@
     </p>
   </div>
 </footer>
-
 
   </body>
 </html>
