@@ -5,6 +5,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0.04em;
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
@@ -14,6 +15,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --main-btn-color: #4e75ff;
+  --main-btn-hover-color: #6c8cff;
+  --secondary-btn-color: #ff4e4e;
+  --secondary-btn-hover-color: #ff7070;
+  --text-color: #2e2f42;
+  --input-border-color: #808080;
+  --input-hover-color: #000000;
+  --bg-gray-color: #f6f6fe;
+  --bg-white-color: #ffffff;
+  /* fonts */
+  --text-font-family: 'Montserrat', serif;
 }
 
 body {
@@ -28,5 +41,5 @@ main {
   flex-grow: 1;
 }
 main:has(.back-link) {
-  text-align: center;
+  /* text-align: center; */
 }
