@@ -24,20 +24,13 @@ function onSubmitForm(evt) {
   } = evt.target;
   formData.email = email.value.trim();
   formData.message = message.value.trim();
-  if (
-    formData.email !== '' &&
-    formData.message !== ''
-  ) {
+  if (formData.email !== '' && formData.message !== '') {
     console.log(formData);
     evt.target.reset();
     localStorage.removeItem(LOCALSTORAGE_KEY);
-    formData.email !== '';
-    formData.message !== '';
-
   } else {
-      alert('Fill please all fields');
+    alert('Fill please all fields');
   }
-  
 }
 
 function populateInputData() {
